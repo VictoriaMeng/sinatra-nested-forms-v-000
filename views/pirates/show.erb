@@ -1,7 +1,7 @@
 <h1>Here's your pirate!</h1><br>
-<%= pirate.name %>
-<%= pirate.weight %>
-<%= pirate.height %>
+<%= @pirate.name %>
+<%= @pirate.weight %>
+<%= @pirate.height %>
 <% pirate.ships.each do |ship| %>
   <%= ship.name %>
   <%= ship.type %>
