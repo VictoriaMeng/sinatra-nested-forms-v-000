@@ -1,10 +1,8 @@
 class Ship
     @@all = []
 
-    def initialize(name, type, booty)
-      @name = name
-      @type = type
-      @booty = booty
+    def initialize(args)
+      args.each { |key, value| self.send("#{key}=", value)}
       @@all << self
     end
 
