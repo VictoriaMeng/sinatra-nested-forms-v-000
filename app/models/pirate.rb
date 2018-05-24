@@ -4,9 +4,7 @@ class Pirate
   @@all = []
 
   def initialize(args)
-    @name = name
-    @weight = weight
-    @height = height
+    args.each { |key, value| self.send("#{key}=", value)}
     @@all << self
   end
 
