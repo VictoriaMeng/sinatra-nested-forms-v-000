@@ -19,6 +19,8 @@ module FormsLab
         Ship.new(details)
       end
 
+      @ships = Ship.all
+
       <p><input type="text" name="pirate[name]"></p>
         <p><input type="text" name="pirate[weight]"></p>
         <p><input type="text" name="pirate[height]"></p>
