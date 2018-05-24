@@ -14,7 +14,6 @@ module FormsLab
 
     get '/pirates' do
     end
-    end
 
   end
 
