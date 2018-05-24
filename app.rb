@@ -15,6 +15,10 @@ module FormsLab
     post '/pirates' do
       @pirate = Pirate.new(params[:pirates])
 
+      params[:pirates][:ships].each do |details|
+        Ship.new(details)
+      end
+
       <p><input type="text" name="pirate[name]"></p>
         <p><input type="text" name="pirate[weight]"></p>
         <p><input type="text" name="pirate[height]"></p>
