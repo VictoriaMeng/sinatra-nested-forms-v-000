@@ -10,9 +10,10 @@ module FormsLab
 
     get '/new' do
       erb :'pirates/new'
-    end  
+    end
 
     post '/pirates' do
+      @pirate = Pirate.new(params[:pirate])
 
       <p><input type="text" name="pirate[name]"></p>
         <p><input type="text" name="pirate[weight]"></p>
