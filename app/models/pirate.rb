@@ -4,7 +4,7 @@ class Pirate
   @@all = []
 
   def initialize(args)
-    args.each { |key, value| self.send("#{key}=", value)}
+    args.each { |key, value| self.send("#{key}=", value) }
     @@all << self
   end
 
