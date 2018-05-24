@@ -4,7 +4,7 @@ class Pirate
   @@all = []
 
   def initialize(args)
-    binding.pry
+    # binding.pry
     args.each { |key, value| self.send("#{key}=", value) }
     @@all << self
   end
