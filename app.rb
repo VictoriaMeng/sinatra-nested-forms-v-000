@@ -21,12 +21,6 @@ module FormsLab
 
       @ships = Ship.all
 
-      <p><input type="text" name="pirate[name]"></p>
-        <p><input type="text" name="pirate[weight]"></p>
-        <p><input type="text" name="pirate[height]"></p>
-        <p><input type="text" name="pirate[ships][][name]"></p>
-        <p><input type="text" name="pirate[ships][][type]"></p>
-        <p><input type="text" name="pirate[ships][][booty]"></p>
     end
 
   end
