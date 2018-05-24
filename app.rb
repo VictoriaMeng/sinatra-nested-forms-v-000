@@ -24,7 +24,8 @@ module FormsLab
       erb :show
     end
 
-    get '/pirates' 
+    get '/pirates' do 
+    end
 
   end
 
